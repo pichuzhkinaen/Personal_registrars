@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    &-logo {
+        width: 52px;
+        height: 24px;
+        margin-right: 66px;
+    }
+}
+.nav {
+    margin-top: 27px;
+}
+.promo {
+    height: 729px;
+    background: url(../img/background.jpg) center (center / cover) no-repeat;
+    background-position-y: -140px;
+    font-family: 'Montserrat', sans-serif;
+}

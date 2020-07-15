@@ -1,0 +1,39 @@
+.buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-basket {
+        position: relative;
+        padding-right: 15px;
+        &__img {
+            width: 31px;
+        }
+        &__circle {
+            position: absolute;
+            text-align: center;
+            align-items: center;
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 19px;
+            color: #131313;
+            top: -8px;
+            left: 27px;
+        }
+    }
+    &__sum {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #131313;
+        
+    }
+}

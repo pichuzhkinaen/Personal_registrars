@@ -1,0 +1,19 @@
+.submenu {
+    display: none;
+    width: 180px;
+    height: 100px;
+    background: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+    margin-top: 70px;
+    z-index: 1;
+    .menu-select {
+        list-style-type: none;
+        padding: 0;
+        &__item {
+            margin-bottom: 20px;
+        }
+        &__link {
+            color: #4E4E4E;
+        }
+    }
+}

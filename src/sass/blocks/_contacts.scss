@@ -1,0 +1,33 @@
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-size: 11px;
+    line-height: 15px;
+    color: #4E4E4E;
+    &-block {
+        padding-right: 25px;
+        &__content {
+            margin: 0;
+        }
+        &__location {
+            &_link {
+                color: #4E4E4E;
+                font-weight: bold;
+            }
+        }
+        &__text {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 25px;
+        }
+        &__geo {
+            height: 15px;
+        }
+        &__img {
+            height: 14px;
+            opacity: 0.3;
+        }
+    }
+    
+}

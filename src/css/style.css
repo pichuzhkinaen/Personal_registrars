@@ -1,0 +1,341 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-logo {
+  width: 52px;
+  height: 24px;
+  margin-right: 66px;
+}
+
+.nav {
+  margin-top: 27px;
+}
+
+.promo {
+  height: 729px;
+  background: url(../img/background.jpg) center center/cover no-repeat;
+  background-position-y: -140px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 1270px) {
+  .container {
+    min-width: 1270px;
+  }
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Montserrat;
+  font-size: 11px;
+  line-height: 15px;
+  color: #4E4E4E;
+}
+
+.contacts-block {
+  padding-right: 25px;
+}
+
+.contacts-block__content {
+  margin: 0;
+}
+
+.contacts-block__location_link {
+  color: #4E4E4E;
+  font-weight: bold;
+}
+
+.contacts-block__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.contacts-block__geo {
+  height: 15px;
+}
+
+.contacts-block__img {
+  height: 14px;
+  opacity: 0.3;
+}
+
+.buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buy-basket {
+  position: relative;
+  padding-right: 15px;
+}
+
+.buy-basket__img {
+  width: 31px;
+}
+
+.buy-basket__circle {
+  position: absolute;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 19px;
+  color: #131313;
+  top: -8px;
+  left: 27px;
+}
+
+.buy__sum {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #131313;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 210px;
+  height: 45px;
+  background: #DA2328;
+  border-radius: 10px;
+  border: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button__img {
+  height: 16px;
+  margin-right: 7px;
+}
+
+.button__text {
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  border-top: 1px #F2F2F2 solid;
+  padding: 15px 10px 20px 10px;
+  margin-bottom: 0;
+}
+
+.menu__item {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.menu__item .arrow {
+  width: 8px;
+  height: 5px;
+  background: url(../icon/arrow_red_bottom.svg) center center/cover no-repeat;
+  margin: 3px 0 0 5px;
+}
+
+.menu__item .arrow_active {
+  background: url(../icon/arrow_red_top.svg) center center/cover no-repeat;
+}
+
+.menu__item_active {
+  position: relative;
+}
+
+.menu__link {
+  color: #4E4E4E;
+}
+
+.menu .submenu {
+  position: absolute;
+}
+
+.promo-text {
+  width: 680px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #FFFFFF;
+  margin-top: 87px;
+}
+
+.promo-text__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+
+.promo-text__subtitle {
+  font-size: 58px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.promo-text__list {
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: none;
+  padding: 0;
+}
+
+.promo-text__item {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.promo-text__item .check {
+  width: 16px;
+  height: 10px;
+  margin-right: 15px;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.form-content__prompt {
+  margin: 0 0 0 30px;
+}
+
+.form-content__input {
+  position: relative;
+  width: 305px;
+  height: 45px;
+  outline: none;
+  border: 0.5px solid #B9B9B9;
+  border-radius: 10px;
+  line-height: 26px;
+  color: #4E4E4E;
+  background-color: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 10px 20px 45px rgba(0, 0, 0, 0.05);
+          box-shadow: 10px 20px 45px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  padding-left: 50px;
+  margin: 5px 25px 31px 0;
+}
+
+.form-content__img {
+  position: absolute;
+  z-index: 1;
+  margin: 22px 0 0 24px;
+}
+
+.form-content__img_user {
+  opacity: 0.5;
+}
+
+.form__name {
+  margin: 0 auto;
+}
+
+.form .button {
+  width: 330px;
+  height: 60px;
+}
+
+.submenu {
+  display: none;
+  width: 180px;
+  height: 100px;
+  background: #FFFFFF;
+  border-radius: 0 0 10px 10px;
+  margin-top: 70px;
+  z-index: 1;
+}
+
+.submenu .menu-select {
+  list-style-type: none;
+  padding: 0;
+}
+
+.submenu .menu-select__item {
+  margin-bottom: 20px;
+}
+
+.submenu .menu-select__link {
+  color: #4E4E4E;
+}
+/*# sourceMappingURL=style.css.map */

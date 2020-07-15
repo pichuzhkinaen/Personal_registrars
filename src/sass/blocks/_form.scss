@@ -1,0 +1,47 @@
+.form {
+    margin-top: 40px;
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+        &__prompt {
+            margin: 0 0 0 30px;
+        }
+        &__input {
+            position: relative;
+            width: 305px;
+            height: 45px;
+            outline: none;
+            border: 0.5px solid #B9B9B9;
+            border-radius: 10px;
+            line-height: 26px;
+            color: #4E4E4E;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: 10px 20px 45px rgba(0, 0, 0, 0.05);
+            font-size: 16px;
+            padding-left: 50px;
+            margin: 5px 25px 31px 0;
+        }
+        &__img {
+            position: absolute;
+            z-index: 1;
+            margin: 22px 0 0 24px;
+            &_user {
+                opacity: 0.5;
+            }
+        }
+    }
+    &__name {
+        margin: 0 auto;
+    }
+    .button {
+        width: 330px;
+        height: 60px;
+    }
+}
