@@ -13,8 +13,21 @@
     margin-top: 27px;
 }
 .promo {
-    height: 729px;
+    height: 504px;
     background: url(../img/background.jpg) center (center / cover) no-repeat;
-    background-position-y: -140px;
+    background-position-y: -120px;
     font-family: 'Montserrat', sans-serif;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    min-height: 617px;
+    margin: 85px 0 186px 0;
+    .product-photo {
+        width: 120%;
+        height: 100%;
+        background: url(../img/360_1.png) center (center / cover) no-repeat;
+        margin-top: 50px;
+    }
+
 }

@@ -1,0 +1,23 @@
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 65px;
+    text-transform: uppercase;
+    &-tab {
+        font-size: 54px;
+        line-height: 58px;
+        color: #131313;
+        font-weight: 300;
+    }
+    .subtitle {
+        font-size: 58px;
+        font-weight: 300;
+        font-style: normal;
+        &-tab {
+            font-weight: bold;
+        }
+    }
+}

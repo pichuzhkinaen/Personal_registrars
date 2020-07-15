@@ -1,23 +1,10 @@
 .promo-text {
     width: 680px;
-    font-family: 'Bebas Neue', sans-serif;
-    color: #FFFFFF;
     margin-top: 87px;
-    &__title {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 60px;
-        line-height: 65px;
-        text-transform: uppercase;
-    }
-    &__subtitle {
-        font-size: 58px;
-        font-weight: 300;
-        font-style: normal;
-    }
     &__list {
         font-family: 'Montserrat', sans-serif;
         list-style-type: none;
+        color: #FFFFFF;
         padding: 0;
     }
     &__item {

@@ -16,4 +16,8 @@ window.addEventListener('DOMContentLoaded', function() {
         name.value = '';
         phone.value = '';
     });
+
+    //скрытие по умолчанию контента таба "Для кого?"
+    let tabWhy = document.getElementById('tab-content_why');
+    tabWhy.style.display = "none";
 });
