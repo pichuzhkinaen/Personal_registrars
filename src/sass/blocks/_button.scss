@@ -5,6 +5,7 @@
     width: 210px;
     height: 45px;
     background: #DA2328;
+    color: #FFFFFF;
     border-radius: 10px;
     border: none;
     &:focus {
@@ -21,7 +22,6 @@
         font-weight: bold;
         font-size: 14px;
         line-height: 17px;
-        color: #FFFFFF;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
     }
 }

@@ -98,6 +98,20 @@
   color: #131313;
 }
 
+.similar-product {
+  margin-top: 118px;
+}
+
+.similar-product_title {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 54px;
+  text-align: center;
+  color: #131313;
+}
+
 @media (min-width: 1270px) {
   .container {
     min-width: 1270px;
@@ -214,6 +228,7 @@
   width: 210px;
   height: 45px;
   background: #DA2328;
+  color: #FFFFFF;
   border-radius: 10px;
   border: none;
 }
@@ -234,7 +249,6 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -580,6 +594,10 @@
   margin-left: 73px;
 }
 
+.footer {
+  margin-top: 30px;
+}
+
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -901,5 +919,113 @@
 .about-product .reviews .comment__text {
   width: 770px;
   margin-top: 20px;
+}
+
+.similar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 66px;
+}
+
+.similar__flag {
+  width: 54px;
+  height: 46px;
+  border-radius: 10px 0 10px 0;
+  color: #FFFFFF;
+  padding: 12px 0;
+  margin-bottom: 12px;
+}
+
+.similar__flag_1 {
+  background: #DA2328;
+}
+
+.similar__flag_2 {
+  background: #162345;
+}
+
+.similar__flag_3 {
+  background: #98B5FF;
+}
+
+.similar__stock {
+  font-size: 16px;
+  -webkit-transform: rotate(-14.57deg);
+          transform: rotate(-14.57deg);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.similar__img {
+  width: 141px;
+  height: 229px;
+  margin: 56px 0 0 30px;
+}
+
+.similar__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #131313;
+  margin: 32px 0 80px 0;
+}
+
+.similar__price {
+  text-align: center;
+}
+
+.similar__price_old {
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: line-through;
+  color: #B9B9B9;
+  margin-right: 20px;
+}
+
+.similar__price_new {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 51px;
+  color: #131313;
+}
+
+.similar-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0 65px 50px;
+}
+
+.similar-button_left {
+  width: 144px;
+  height: 50px;
+  background: #FFFFFF;
+  color: #162345;
+  border: 1px #162345 solid;
+  border-radius: 0 0 0 10px;
+}
+
+.similar-button_right {
+  width: 144px;
+  height: 50px;
+  background: #162345;
+  color: #FFFFFF;
+  border: 1px #162345 solid;
+  border-radius: 0 0 10px 0;
+}
+
+.similar-button__img {
+  margin-right: 9px;
 }
 /*# sourceMappingURL=style.css.map */
