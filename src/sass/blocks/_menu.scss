@@ -30,8 +30,35 @@
     }
     &__link {
         color: #4E4E4E;
+        &:hover {
+            color: #DA2328;
+            text-decoration: none;
+        }
     }
     .submenu {
         position: absolute;
+    }
+}
+.card-menu {
+    &__list {
+        border-top: none;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        padding: 0;
+    }
+    &__btn {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        width: 310px;
+        height: 60px;
+        color: #131313;
+        background: #FFFFFF;
+        padding: 0;
+        &_active {
+            color: #FFFFFF;
+            background: #162345;
+        }
     }
 }

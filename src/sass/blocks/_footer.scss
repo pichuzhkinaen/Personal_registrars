@@ -1,0 +1,36 @@
+.footer {
+    &-content {
+        display: flex;
+        justify-content: center;
+        height: 64px;
+        background: #1F1F1F;
+        &__text {
+            color: #FFFFFF;
+            opacity: 0.5;
+            font-size: 12px;
+            margin-top: 21px;
+        }
+        .menu {
+            border: none;
+            &__link {
+                color: #FFFFFF;
+                margin-left: 32px;
+            }
+        }
+    }
+    .subfooter {
+        height: 35px;
+        background: #131313;
+        text-align: center;
+        &__text {
+            font-size: 12px;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+        &__link {
+            color: #FFFFFF;
+            font-size: 12px;
+            text-decoration: underline;
+        }
+    } 
+}

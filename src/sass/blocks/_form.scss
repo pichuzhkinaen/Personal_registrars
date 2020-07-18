@@ -6,10 +6,11 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
-        line-height: 16px;
         color: #FFFFFF;
         &__prompt {
+            font-size: 12px;
+            line-height: 16px;
+            color: #FFFFFF;
             margin: 0 0 0 30px;
         }
         &__input {
@@ -19,12 +20,11 @@
             outline: none;
             border: 0.5px solid #B9B9B9;
             border-radius: 10px;
+            font-size: 16px;
             line-height: 26px;
             color: #4E4E4E;
             background-color: #FFFFFF;
-            box-sizing: border-box;
             box-shadow: 10px 20px 45px rgba(0, 0, 0, 0.05);
-            font-size: 16px;
             padding-left: 50px;
             margin: 5px 25px 31px 0;
         }
@@ -32,16 +32,43 @@
             position: absolute;
             z-index: 1;
             margin: 22px 0 0 24px;
-            &_user {
-                opacity: 0.5;
-            }
         }
-    }
-    &__name {
-        margin: 0 auto;
+        &_rewiew {
+            display: flex;
+            justify-content: flex-start;
+        }
     }
     .button {
         width: 330px;
         height: 60px;
+    }
+}
+
+.rewiew-form {
+    font-family: Montserrat;
+    &_content {
+        justify-content: center;
+    }
+    &_comment {
+        margin-left: 16%;
+    }
+    &_prompt {
+        color: #4E4E4E;
+    }
+    &_img {
+        opacity: 0.5;
+    }
+    &_input {
+        width: 393px;
+    }
+    &_textarea {
+        width: 816px;
+        height: 90px;
+        line-height: 26px;
+        padding: 10px 0 0 20px;
+    }
+    .button-review {
+        background: #162345;
+        margin: 0 auto;
     }
 }

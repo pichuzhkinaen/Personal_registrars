@@ -20,4 +20,9 @@ window.addEventListener('DOMContentLoaded', function() {
     //скрытие по умолчанию контента таба "Для кого?"
     let tabWhy = document.getElementById('tab-content_why');
     tabWhy.style.display = "none";
+
+    //скролл в табах
+    $(function() {
+        $('.scroll-pane').jScrollPane();
+    });
 });

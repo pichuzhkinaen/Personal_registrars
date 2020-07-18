@@ -1,0 +1,54 @@
+.about-product {
+    .descr {
+        display: none;
+        font-family: Montserrat;
+        color: #131313;
+        margin-top: 88px;
+        &__title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 26px;
+            color: #4E4E4E;
+            margin-top: 43px;
+        }
+    }
+    .reviews {
+        width: 1240px;
+        font-family: Montserrat;
+        color: #131313;
+        margin: 85px 0 43px 0;
+        &-content {
+            display: flex;
+            padding-left: 200px;
+            &__avatar {
+                width: 50px;
+                height: 50px;
+                margin-right: 26px;
+            }
+        }
+        &__1 {
+            box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+            padding-bottom: 29px;
+        }
+        &__2 {
+            padding-top: 29px;
+        }
+        .comment {
+            &__time {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            &__name {
+                font-weight: bold;
+            }
+            &__text {
+                width: 770px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

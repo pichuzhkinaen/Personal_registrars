@@ -11,6 +11,9 @@
             margin: 0;
         }
         &__location {
+            &:hover {
+                text-decoration: none;
+            }
             &_link {
                 color: #4E4E4E;
                 font-weight: bold;
