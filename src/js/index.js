@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import $ from 'jquery';
 window.$ = window.jQuery = $;
 // import 'bootstrap';
@@ -11,6 +12,8 @@ import './slick.min.js';
 import '../css/style.css';
 
 
+=======
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 window.addEventListener('DOMContentLoaded', function() {
     'use strict';
     
@@ -21,6 +24,7 @@ window.addEventListener('DOMContentLoaded', function() {
     let im = new Inputmask("+7 (999) 999-99-99");
     im.mask(phone);
 
+<<<<<<< HEAD
     //скролл в табах
     $(function() {
         $('#tab-content_who').jScrollPane();
@@ -248,4 +252,23 @@ window.addEventListener('DOMContentLoaded', function() {
         // console.log(this.innerHTML);
     }
 
+=======
+
+    //отправка формы происходит по нажатию Enter или кнопки Отправить
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        name.value = '';
+        phone.value = '';
+    });
+
+    //скрытие по умолчанию контента таба "Для кого?"
+    let tabWhy = document.getElementById('tab-content_why');
+    tabWhy.style.display = "none";
+
+    //скролл в табах
+    $(function() {
+        $('.scroll-pane').jScrollPane();
+    });
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 });

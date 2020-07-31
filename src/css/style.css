@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import 'bootstrap-reboot.min.css';
 @import 'bootstrap-grid.min.css';
 @import "../fonts/Bebas_neue/bebas_neue.css";
@@ -5,6 +6,8 @@
 @import '../css/jquery.jscrollpane.css';
 
 
+=======
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,7 +106,10 @@
   line-height: 24px;
   text-align: center;
   color: #131313;
+<<<<<<< HEAD
   margin-top: 50px;
+=======
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 }
 
 .similar-product {
@@ -239,12 +245,15 @@
   color: #FFFFFF;
   border-radius: 10px;
   border: none;
+<<<<<<< HEAD
   text-align: center;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
+=======
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 }
 
 .button:focus {
@@ -256,6 +265,19 @@
   margin-right: 7px;
 }
 
+<<<<<<< HEAD
+=======
+.button__text {
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,35 +554,60 @@
   height: 60px;
   background: #FFFFFF;
   border-radius: 10px;
+<<<<<<< HEAD
   color: #131313;
 }
 
 .tab__btn .button__why_active {
+=======
+}
+
+.tab__btn .button__text {
+  color: #131313;
+}
+
+.tab__btn .button__text_active {
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   color: #FFFFFF;
 }
 
 .tab__btn .btn-who_active {
+<<<<<<< HEAD
   color: #FFFFFF;
+=======
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   background: #162345;
 }
 
 .tab__btn .btn-why_active {
+<<<<<<< HEAD
   color: #FFFFFF;
+=======
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   background: #E31E25;
 }
 
 .tab__content {
+<<<<<<< HEAD
+=======
+  width: 500px;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   height: 300px;
   overflow-y: scroll;
   font-family: Montserrat;
   font-style: normal;
   outline: none;
+<<<<<<< HEAD
+=======
+  padding: 5px;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   margin-top: 47px;
 }
 
 .tab__list {
   list-style-type: none;
   padding: 0;
+<<<<<<< HEAD
   padding-right: 50px;
 }
 
@@ -577,6 +624,15 @@
   font-size: 16px;
   color: #131313;
   margin-bottom: 30px;
+=======
+  position: relative;
+}
+
+.tab__item {
+  font-size: 16px;
+  line-height: 68px;
+  color: #131313;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 }
 
 .tab__item_last {
@@ -585,6 +641,10 @@
 }
 
 .tab__num {
+<<<<<<< HEAD
+=======
+  position: absolute;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   width: 50px;
   height: 50px;
   background: #FFFFFF;
@@ -600,7 +660,11 @@
 }
 
 .tab__text {
+<<<<<<< HEAD
   margin-left: 30px;
+=======
+  margin-left: 73px;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 }
 
 .footer {
@@ -656,25 +720,37 @@
   outline: none;
 }
 
+<<<<<<< HEAD
 .carousel {
   display: flex;
   justify-content: center;;
 }
 
 /* .slick-slider {
+=======
+.slick-slider {
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: static;
   width: 548px;
+<<<<<<< HEAD
   height: 548px; 
+=======
+  height: 548px;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   left: 340px;
   top: 241px;
   -webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 18px;
+<<<<<<< HEAD
 }  */
+=======
+}
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 
 .slick-arrow {
   width: 56px;
@@ -694,6 +770,7 @@
 }
 
 .slick-prev {
+<<<<<<< HEAD
   /* position: absolute;
   margin-top: 220px; */
   background: url('../icon/arrow_left.svg') center no-repeat;
@@ -704,6 +781,16 @@
   margin-left: 454px;
   margin-top: 220px; */
   background: url('../icon/arrow_right.svg') center no-repeat;
+=======
+  position: absolute;
+  margin-top: 220px;
+}
+
+.slick-next {
+  position: absolute;
+  margin-left: 454px;
+  margin-top: 220px;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 }
 
 .carusel__number {
@@ -764,12 +851,19 @@
   height: 40px;
   font-weight: bold;
   font-size: 14px;
+<<<<<<< HEAD
   text-align: center;
   border: 1px #162345 solid;
   background: #FFFFFF;
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
   padding-top: 10px;
+=======
+  border: 1px #162345 solid;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  text-align: center;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 }
 
 .product-buy__plus {
@@ -818,6 +912,7 @@
   margin-top: 69px;
 }
 
+<<<<<<< HEAD
 .product-buy__btn-img {
   width: 23px;
   height: 21px;
@@ -843,13 +938,31 @@
 
 .product-buy__btn_2 {
   color: #131313;
+=======
+.product-buy__btn .button__img {
+  width: 23px;
+  height: 21px;
+}
+
+.product-buy__btn_1 {
+  background: #162345;
+  margin-right: 30px;
+}
+
+.product-buy__btn_2 {
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   border: 1px #162345 solid;
   background: #FFFFFF;
 }
 
+<<<<<<< HEAD
 .product-buy__btn_2:active {
   background: #162345;
   color: #FFFFFF;
+=======
+.product-buy__text2 {
+  color: #131313;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 }
 
 .product-buy__info {
@@ -891,6 +1004,10 @@
 }
 
 .about-product .descr {
+<<<<<<< HEAD
+=======
+  display: none;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   font-family: Montserrat;
   color: #131313;
   margin-top: 88px;
@@ -910,7 +1027,10 @@
 }
 
 .about-product .reviews {
+<<<<<<< HEAD
   display: none;
+=======
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
   width: 1240px;
   font-family: Montserrat;
   color: #131313;
@@ -1061,6 +1181,7 @@
 .similar-button__img {
   margin-right: 9px;
 }
+<<<<<<< HEAD
 
 .overlay {
   display: none;
@@ -1322,4 +1443,6 @@
   font-size: 16px;
   cursor: pointer;
 }
+=======
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 /*# sourceMappingURL=style.css.map */

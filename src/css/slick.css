@@ -115,5 +115,9 @@
     border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
+<<<<<<< HEAD
     /* display: none; */
+=======
+    display: none;
+>>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 }
