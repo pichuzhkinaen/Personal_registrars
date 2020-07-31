@@ -1,0 +1,71 @@
+.tab {
+    &__btn {
+        display: flex;
+        justify-content: flex-start;
+        width: 350px;
+        border-radius: 10px;
+        margin-top: 43px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        .button {
+            width: 175px;
+            height: 60px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            color: #131313;
+            &__why {
+                &_active {
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .btn-who_active {
+            color: #FFFFFF;
+            background: #162345;
+        }
+        .btn-why_active {
+            color: #FFFFFF;
+            background: #E31E25;
+        }
+    }
+    &__content {
+        height: 300px;
+        overflow-y: scroll;
+        font-family: Montserrat;
+        font-style: normal;
+        outline: none;
+        margin-top: 47px;
+    }
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        padding-right: 50px;
+    }
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 16px;
+        color: #131313;
+        margin-bottom: 30px;
+        &_last {
+            line-height: 22px;
+            margin-left: 73px;
+        }
+    }
+    &__num {
+        width: 50px;
+        height: 50px;
+        background: #FFFFFF;
+        box-shadow: 5px 0 20px rgba(0,0,0,0.2);
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #162345;
+        padding: 12px;
+    }
+    &__text {
+        margin-left: 30px;
+    }
+}

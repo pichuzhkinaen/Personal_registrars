@@ -1,0 +1,129 @@
+.product-buy {
+    font-family: Montserrat;
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        color: #131313;
+        margin-top: 113px;
+    }
+    &__add {
+        display: flex;
+        width: 105px;
+        height: 40px;
+        border: 1px #162345 solid;
+        border-radius: 10px;
+        text-align: center;
+        background: #162345;
+        margin-top: 62px;
+    }
+    &__minus {
+        width: 36px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 8px;
+    }
+    &__amount {
+        width: 40px;
+        height: 40px;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        border: 1px #162345 solid;
+        background: #FFFFFF;
+        transform: translateY(-1px);
+        padding-top: 10px;
+    }
+    &__plus {
+        width: 36px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 10px;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__old-price {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 39px;
+        text-decoration: line-through;
+        color: #B9B9B9;
+        margin: 70px 0 0 24px;
+    }
+    &__new-price {
+        font-weight: 300;
+        font-size: 42px;
+        line-height: 51px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #131313;
+        margin: 62px 0 0 14px;
+    }
+    &__btn {
+        display: flex;
+        margin-top: 69px;
+        &-img {
+            width: 23px;
+            height: 21px;
+            background: url(../icon/icon.svg) center (center / cover) no-repeat;
+            margin-right: 5px;
+            &_active {
+                background: url(../icon/basket_white.svg) center (center / cover) no-repeat;
+            }
+        }
+        &_1 {
+            color: #131313;
+            border: 1px #162345 solid;
+            background: #FFFFFF;
+            margin-right: 30px;
+            &:active {
+                background: #162345;
+                color: #FFFFFF;
+            }
+        }
+        &_2 {
+            color: #131313;
+            border: 1px #162345 solid;
+            background: #FFFFFF;
+            &:active {
+                background: #162345;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        margin-top: 40px;
+    }
+    &__block {
+      margin-right: 30px;  
+    }
+    &__circle {
+        width: 61px;
+        height: 61px;
+        background: #FFFFFF;
+        box-shadow: 5px 0 25px rgba(0,0,0,0.2);
+        border-radius: 50%;
+        text-align: center;
+        padding: 20px;
+    }
+    &__rubric {
+        font-size: 16px;
+        line-height: 26px;
+        color: #131313;
+        margin-top: 16px;
+    }
+    &__text {
+        font-size: 12px;
+        color: #4E4E4E;
+    }
+    &__list {
+        padding-left: 20px;
+    }
+}

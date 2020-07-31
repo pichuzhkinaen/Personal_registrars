@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Персональные регистраторы</title>
+    <!-- <link rel="stylesheet" href="/src/css/jquery.jscrollpane.css" media="all"> -->
+    <!-- <link rel="stylesheet" href="/src/fonts/Bebas_neue/stylesheet.css">
+    <link rel="stylesheet" href="/src/fonts/Montserrat/stylesheet.css"> -->
+    <link rel="shortcut icon" href="./icon/Logo1.svg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="/src/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/src/css/bootstrap-grid.min.css"> -->
+    <!-- <link rel="stylesheet" href="/src/css/style.css"> -->
+</head>
+
+<body>
+    
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header">
+                        <a href="#"><img class="header-logo" src="./icon/logo1.svg" alt="logo"></a>
+
+                        <div class="contacts">
+                            <div class="contacts-block">
+                                <p class="contacts-block__content">
+                                    <img class="contacts-block__geo" src="./icon/geo.svg" alt="geo" class="contacts-block__img">
+                                    Выберите город: 
+                                    <a href="#" class="contacts-block__location">
+                                        <span class="contacts-block__location_link">Петропавловск-Камчатский</span>
+                                    </a>
+                                    <img src="./icon/arrow.svg" alt="arrow" class="contacts-block__arrow">
+                                </p>
+                                <span class="contacts-block__text">ул. Ленинградская, 100</span>
+                            </div>
+
+                            <div class="contacts-block">
+                                <p class="contacts-block__content">
+                                    <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
+                                    <span>Для всех регионов:</span>
+                                </p>
+                                <span class="contacts-block__text">8 (800) 551-23-30</span>
+                            </div>
+
+                            <div class="contacts-block">
+                                <p class="contacts-block__content">
+                                    <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
+                                    <span>Для Петропавловск-Камчатского:</span>
+                                </p>
+                                <span class="contacts-block__text">8 (958) 581-53-52</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="buy">
+                            <div class="buy-basket">
+                                <a href="#">
+                                    <img class="buy-basket__img" src="./icon/icon.svg" alt="basket">
+                                </a>
+                                <a href="#">
+                                    <span class="buy-basket__circle">0</span>
+                                </a>
+                            </div>
+                            <a href="#">
+                                <span class="buy__sum">0</span>
+                            </a>
+                            <span>&#160;₽</span>
+                        </div>
+
+                        <button id="btn_call" class="button">
+                            <img class="button__img" src="./icon/phone_white.svg" alt="phone">
+                            Перезвоните мне
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Доставка и оплата</a></li>
+                    <li class="menu__item menu__item_active">
+                        <a id="select" href="#" class="menu__link">Полезная информация</a>
+                        <div class="arrow"></div>
+
+                        <div class="submenu">
+                            <ul class="menu-select">                                
+                                <li class="menu-select__item"><a class="menu-select__link" href="#">Акции</a></li>
+                                <li class="menu-select__item"><a class="menu-select__link" href="#">Новости</a></li>
+                                <li class="menu-select__item"><a class="menu-select__link" href="#">Статьи</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+        
+    <section class="promo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-6">
+
+                    <div class="promo-text">
+                        <h1 class="title">Персональные регистраторы<span class="subtitle"> (нагрудные камеры) от 3990 руб.</span></h1>
+                        <ul class="promo-text__list">
+                            <li class="promo-text__item"><img class="check" src="./icon/check.svg" alt="check">В наличии в Петропавловск-Камчатском</li>
+                            <li class="promo-text__item"><img class="check" src="./icon/check.svg" alt="check">Получение в день оформления заказа</li>
+                        </ul>
+                    </div>
+
+                    <form class="form">
+                        <div class="form-content">
+                            <div class="form-content__block">
+                                <p class="form-content__prompt">* Ваше имя</p>
+                                <img class="form-content__img form-content__img_user" src="./icon/user.svg" alt="img">
+                                <input id="name" type="text" minlength="2" maxlength="15" class="form-content__input form-content__input_name" placeholder="Введите имя" required autocomplete="on" minlength="2" maxlength="50">
+                            </div>
+
+                            <div class="form-content__block">
+                                <p class="form-content__prompt">* Ваш телефон</p>
+                                <img class="form-content__img" src="./icon/phone-receiver.svg" alt="img">
+                                <input id="phone" type="tel" class="form-content__input form-content__input_phone" placeholder="+7 (___) ___-__-__" required autocomplete="on">
+                            </div>
+                        </div>
+
+                        <button id="consult" class="button">Получить консультацию</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="tab">
+                        <h1 class="title title-tab">кто и для чего применяют<br><span class="subtitle subtitle-tab">персональные регистраторы?</span></h1>
+                        <div class="tab__btn">
+                            <button id="tab-btn_who" class="button">Кто?</button>
+                            <button id="tab-btn_why" class="button button__why">Для чего?</button>
+                        </div>
+                        
+                        <div id="tab-content_who" class="tab__content scroll-pane">
+                            <ul class="tab__list">
+                                <li class="tab__item"><div class="tab__num">01</div>
+                                    <span class="tab__text">Сотрудники правоохранительных органов</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">02</div>
+                                    <span class="tab__text">Охранники</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">03</div>
+                                    <span class="tab__text">Егеря</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">04</div>
+                                    <span class="tab__text">Газовики</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">05</div>
+                                    <span class="tab__text">Шахтеры</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">06</div>
+                                    <span class="tab__text">Железнодорожники</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">07</div>
+                                    <span class="tab__text">Пограничники</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">08</div>
+                                    <span class="tab__text">Инкассаторы</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">09</div>
+                                    <span class="tab__text">Экспедиторы</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">10</div>
+                                    <span class="tab__text">Курьеры</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">11</div>
+                                    <span class="tab__text">Путешественники</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">12</div>
+                                    <span class="tab__text">Блогеры</span>
+                                </li>
+                                <li class="tab__item tab__item_last">… и еще около 97 сфер применения носимых регистраторов.</li>
+                            </ul>
+                        </div>
+        
+                        <div id="tab-content_why" class="tab__content scroll-pane">
+                            <ul class="tab__list">
+                                <li class="tab__item">
+                                    <div class="tab__num">01</div>
+                                    <span class="tab__text">При осуществлении контроля над сотрудниками.</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">02</div>
+                                    <span class="tab__text">Запись видео в качестве доказательной базы при решении спорных и конфликтных ситуаций.</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">03</div>
+                                    <span class="tab__text">В качестве дополнительной безопасности в ситуациях, когда возникает провокация.</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">04</div>
+                                    <span class="tab__text">Снижение коррупционной̆ составляющей̆ в работе правоохранительных и иных органов.</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">05</div>
+                                    <span class="tab__text">Возможность выявления и разбора проблемы при чрезвычайных происшествиях.</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">06</div>
+                                    <span class="tab__text">Фиксация рабочего времени сотрудников с доказательной базой.</span>
+                                </li>
+                                <li class="tab__item">
+                                    <div class="tab__num">07</div>
+                                    <span class="tab__text">Для записи видео в научных и туристических экспедициях, путешествиях.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="./card.html"><div class="product-photo"></div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header">
+                        <a href="#"><img class="header-logo" src="./icon/logo1.svg" alt="logo"></a>
+
+                        <div class="contacts">
+                            <div class="contacts-block">
+                                <p class="contacts-block__content">
+                                    <img class="contacts-block__geo" src="./icon/geo.svg" alt="geo" class="contacts-block__img">
+                                    Выберите город: 
+                                    <a href="#" class="contacts-block__location">
+                                        <span class="contacts-block__location_link">Петропавловск-Камчатский</span>
+                                    </a>
+                                    <img src="./icon/arrow.svg" alt="arrow" class="contacts-block__arrow">
+                                </p>
+                                <span class="contacts-block__text">ул. Ленинградская, 100</span>
+                            </div>
+
+                            <div class="contacts-block">
+                                <p class="contacts-block__content">
+                                    <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
+                                    <span>Для всех регионов:</span>
+                                </p>
+                                <span class="contacts-block__text">8 (800) 551-23-30</span>
+                            </div>
+
+                            <div class="contacts-block">
+                                <p class="contacts-block__content">
+                                    <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
+                                    <span>Для Петропавловск-Камчатского:</span>
+                                </p>
+                                <span class="contacts-block__text">8 (958) 581-53-52</span>
+                            </div>
+                            
+                        </div>
+
+                        <img class="social-icon" src="./icon/vk-social-logotype.svg" alt="vkontakte">
+                        <img class="social-icon" src="./icon/facebook-logo-button.svg" alt="facebook">
+                        <img class="social-icon" src="./icon/instagram-logo.svg" alt="instagram">
+
+                        <button class="button">
+                            <img class="button__img" src="./icon/phone_white.svg" alt="phone">
+                            Перезвоните мне
+                        </button>
+                    </div>
+                    
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Доставка и оплата</a></li>
+                            <li class="menu__item menu__item_active">
+                                <a id="select" href="#" class="menu__link">Полезная информация</a>
+                                <div class="arrow"></div>
+            
+                                <div class="submenu">
+                                    <ul class="menu-select">                                
+                                        <li class="menu-select__item"><a class="menu-select__link" href="#">Акции</a></li>
+                                        <li class="menu-select__item"><a class="menu-select__link" href="#">Новости</a></li>
+                                        <li class="menu-select__item"><a class="menu-select__link" href="#">Статьи</a></li>
+                                    </ul>
+                                </div>
+            
+                            </li>
+                            <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <p class="footer-content__text">ООО Третья планета ИНН 7017448330 ОГРН 1187031063053</p>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Возврат и обмен</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Гарантии</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Политика конфиденциальности</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Карта сайта</a></li>
+                </ul>
+            </div>
+            
+            <div class="subfooter">
+                <span class="subfooter__text">Все права защищены</span>
+                <a href="#" class="subfooter__link">regcam.ru</a>
+                <span class="subfooter__text">2020 ©</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <section class="overlay">
+        <form class="form">
+            <img class="close" src="./icon/close.png" alt="close">
+            <div class="form-content">
+                <div class="form-content__block">
+                    <p class="form-content__prompt">* Ваше имя</p>
+                    <img class="form-content__img form-content__img_user" src="./icon/user.svg" alt="img">
+                    <input type="text" minlength="2" maxlength="15" class="form-content__input form-content__input_name" placeholder="Введите имя" required autocomplete="on" minlength="2" maxlength="50">
+                </div>
+
+                <div class="form-content__block">
+                    <p class="form-content__prompt">* Ваш телефон</p>
+                    <img class="form-content__img" src="./icon/phone-receiver.svg" alt="img">
+                    <input type="tel" class="form-content__input form-content__input_phone" placeholder="+7 (___) ___-__-__" required autocomplete="on">
+                </div>
+            </div>
+
+            <button class="button">Перезвоните мне</button>
+        </form>
+    </section>
+
+
+    <section class="pop-up">
+        <div class="pop-up__wrapper">
+            <div class="pop-up__close"><img class="pop-up__img" src="./icon/close.png" alt="close"></div>
+            <div class="pop-up__consultant">
+                <img class="pop-up__img-avatar" src="./icon/avatar1.png" alt="consultant">
+                <span class="pop-up__name">Ольга</span>
+                <span>Консультант</span>
+            </div>
+                
+            <div class="pop-up__message">
+                <p class="pop-up__text">Добрый день! Отвечу на все ваши вопросы.</p>
+            </div>
+            <div class="pop-up__textarea">
+                <textarea class="pop-up__question"></textarea>
+                <a href="#" class="pop-up__send">
+                    <img class="pop-up__arrow" src="./icon/arrow-share.svg" alt="consultant">
+                </a>
+            </div>
+        </div>        
+    </section>
+
+    <section id="overlay-search" class="overlay">
+        <div class="modal modal-search">
+            <img class="modal-search__close" src="./icon/close.png" alt="close">
+            <div class="search-city">
+                <div class="search-city__header">
+                    <h3 class="title">Выбор города:</h3>
+                    <div>
+                        <input type="text" class="search-city__input" placeholder="Найти" autofocus>
+                        <button class="search-city__btn">
+                            <img class="search-city__img" src="./icon/search.svg" alt="search">
+                        </button>
+                    </div>
+                </div>
+                <div class="search-city__list"></div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- <script src="/lib/jquery.min.js"></script> -->
+    <!-- <script src="/lib/inputmask.js"></script> -->
+    <!-- <script src="/src/js/jquery.mousewheel.js"></script> -->
+    <!-- <script src="/src/js/jquery.jscrollpane.min.js"></script> -->
+    <!-- <script src="/src/js/index.js"></script> -->
+    <!-- <script src="/dist/boundle.js"></script> -->
+</body>
+
+</html>

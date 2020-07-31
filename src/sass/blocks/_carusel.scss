@@ -1,0 +1,55 @@
+.slick-slide {
+    outline: none;
+}
+.slick-slider {
+    display: flex;
+    position: static;
+    width: 548px;
+    height: 548px;
+    left: 340px;
+    top: 241px;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 18px;
+}
+.slick-arrow {
+    width: 56px;
+    height: 56px;
+    background: #FFFFFF;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 50%;
+}
+.slick-list {
+    width: 276px;
+    height: 449px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.slick-prev {
+    position: absolute;
+    margin-top: 220px;
+}
+.slick-next {
+    position: absolute;
+    margin-left: 454px;
+    margin-top: 220px;
+}
+.carusel {
+    &__number {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 42px;
+        color: #B9B9B9;
+        margin-left: 22px;
+        transform: translateY(-100%);
+        &-all {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            color: #B9B9B9;
+        }
+    }
+}

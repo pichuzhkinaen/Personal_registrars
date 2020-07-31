@@ -1,0 +1,24 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 45px;
+    background: #DA2328;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    &:focus {
+         outline: none; 
+        }
+    &__img {
+        height: 16px;
+        margin-right: 7px;
+    }
+}
