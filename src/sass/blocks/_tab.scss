@@ -1,8 +1,4 @@
 .tab {
-<<<<<<< HEAD
-=======
-    
->>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
     &__btn {
         display: flex;
         justify-content: flex-start;
@@ -15,53 +11,33 @@
             height: 60px;
             background: #FFFFFF;
             border-radius: 10px;
-<<<<<<< HEAD
             color: #131313;
             &__why {
-=======
-            &__text {
-                color: #131313;
->>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
                 &_active {
                     color: #FFFFFF;
                 }
             }
         }
         .btn-who_active {
-<<<<<<< HEAD
             color: #FFFFFF;
             background: #162345;
         }
         .btn-why_active {
             color: #FFFFFF;
-=======
-            background: #162345;
-        }
-        .btn-why_active {
->>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
             background: #E31E25;
         }
     }
     &__content {
-<<<<<<< HEAD
-=======
-        width: 500px;
->>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
         height: 300px;
         overflow-y: scroll;
         font-family: Montserrat;
         font-style: normal;
         outline: none;
-<<<<<<< HEAD
-=======
-        padding: 5px;
->>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
         margin-top: 47px;
     }
     &__list {
         list-style-type: none;
         padding: 0;
-<<<<<<< HEAD
         padding-right: 50px;
     }
     &__item {
@@ -71,24 +47,12 @@
         font-size: 16px;
         color: #131313;
         margin-bottom: 30px;
-=======
-        position: relative;
-    }
-    &__item {
-        font-size: 16px;
-        line-height: 68px;
-        color: #131313;
->>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
         &_last {
             line-height: 22px;
             margin-left: 73px;
         }
     }
     &__num {
-<<<<<<< HEAD
-=======
-        position: absolute;
->>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
         width: 50px;
         height: 50px;
         background: #FFFFFF;
@@ -102,10 +66,6 @@
         padding: 12px;
     }
     &__text {
-<<<<<<< HEAD
         margin-left: 30px;
-=======
-        margin-left: 73px;
->>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
     }
 }

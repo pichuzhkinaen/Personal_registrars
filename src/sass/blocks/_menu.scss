@@ -19,17 +19,16 @@
             width: 8px;
             height: 5px;
             background: url(../icon/arrow_red_bottom.svg) center (center / cover) no-repeat;
+            cursor: pointer;
             margin: 3px 0 0 5px;
             &_active {
                 background: url(../icon/arrow_red_top.svg) center (center / cover) no-repeat;  
             }
         }
-        &_active {
-            position: relative;
-        } 
     }
     &__link {
         color: #4E4E4E;
+        cursor: pointer;
         &:hover {
             color: #DA2328;
             text-decoration: none;

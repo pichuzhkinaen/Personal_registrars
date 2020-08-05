@@ -1,22 +1,27 @@
-<<<<<<< HEAD
 import $ from 'jquery';
 window.$ = window.jQuery = $;
-// import 'bootstrap';
 import './inputmask.js';
 import 'jscrollpane';
-// import './jquery.mousewheel.js';
-// import './jquery.jscrollpane.min.js';
-import './slick.min.js';
-// import './card.js';
+import './jquery.mousewheel.js';
+import './_modal-call-to-me';
+import './_search-city';
+import './_drop-down-list-info';
 
+import '../css/bootstrap-reboot.min.css';
+import '../css/bootstrap-grid.min.css';
+import "../fonts/Bebas_neue/bebas_neue.css";
+import "../fonts/Montserrat/montserrat.css";
+import '../css/jquery.jscrollpane.css';
+import '../../node_modules/slick-carousel/slick/slick.css';
+import '../../node_modules/slick-carousel/slick/slick-theme.css';
 import '../css/style.css';
 
 
-=======
->>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
-window.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     'use strict';
-    
+
+    // console.log(document);
+        
     let form = document.querySelector('.form'),
         phone = document.getElementById('phone');
 
@@ -24,7 +29,6 @@ window.addEventListener('DOMContentLoaded', function() {
     let im = new Inputmask("+7 (999) 999-99-99");
     im.mask(phone);
 
-<<<<<<< HEAD
     //скролл в табах
     $(function() {
         $('#tab-content_who').jScrollPane();
@@ -58,25 +62,6 @@ window.addEventListener('DOMContentLoaded', function() {
             $('#tab-content_why').data('jsp').reinitialise();
         }
     }
-
-    //модальное окно
-    let overlay = document.querySelector('.overlay'),
-        btnCall = document.getElementById('btn_call'),
-        close = document.querySelector('.close'),
-        inputName = document.querySelector('.form-content__input_name'),
-        inputPhone = document.querySelector('.form-content__input_phone');
-
-    btnCall.addEventListener('click', openModalCall);
-    close.addEventListener('click', function() {
-        inputName.value = '';
-        inputPhone.value = '';
-        
-        overlay.style.display = "none";
-    });
-
-    function openModalCall() {
-        overlay.style.display = 'block';
-    }
     
     //pop-up-уведомление
     let popUP = document.querySelector('.pop-up'),
@@ -97,178 +82,4 @@ window.addEventListener('DOMContentLoaded', function() {
     closePopUp.addEventListener('click', function() {
         popUP.style.display = 'none';
     });
-
-    //модальное окно для поиска города
-    let overlaySearch = document.getElementById('overlay-search'),
-        inputSearch = document.querySelector('.search-city__input'),
-        currentLocation = document.querySelector('.contacts-block__location_link'),
-        searchClose = document.querySelector('.modal-search__close');
-
-    currentLocation.addEventListener('click', function() {
-        overlaySearch.style.display = 'block';
-    });
-
-    searchClose.addEventListener('click', function() {
-        overlaySearch.style.display = 'none';
-    });
-
-    //выбор города
-    const cities = ["Москва",
-                    "Санкт-Петербург",
-                    "Новосибирск",
-                    "Екатеринбург",
-                    "Нижний Новгород",
-                    "Казань",
-                    "Самара",
-                    "Челябинск",
-                    "Омск",
-                    "Ростов-на-Дону",
-                    "Уфа",
-                    "Красноярск",
-                    "Пермь",
-                    "Волгоград",
-                    "Воронеж",
-                    "Саратов",
-                    "Краснодар",
-                    "Тольятти",
-                    "Тюмень",
-                    "Ижевск",
-                    "Барнаул",
-                    "Ульяновск",
-                    "Иркутск",
-                    "Владивосток",
-                    "Ярославль",
-                    "Хабаровск",
-                    "Махачкала",
-                    "Оренбург",
-                    "Томск",
-                    "Новокузнецк",
-                    "Кемерово",
-                    "Астрахань",
-                    "Рязань",
-                    "Набережные Челны",
-                    "Пенза",
-                    "Липецк",
-                    "Тула",
-                    "Киров",
-                    "Чебоксары",
-                    "Калининград",
-                    "Курск",
-                    "Улан-Удэ",
-                    "Ставрополь",
-                    "Магнитогорск",
-                    "Тверь",
-                    "Иваново",
-                    "Брянск",
-                    "Сочи",
-                    "Белгород",
-                    "Сургут"];
-
-    let searchBtn = document.querySelector('.search-city__btn');
-    searchBtn.addEventListener('click', search);
-
-    //поиск городов по введенным буквам при нажатии кнопки поиска
-    function search() {
-        let searchStr = document.querySelector('.search-city__input').value,
-            regexp = new RegExp(searchStr, "ig"),
-            res1 = searchCities(cities, regexp),
-            cityList = document.querySelector('.search-city__list');
-
-        for (let i = cityList.children.length - 1; i >= 0; i--) {
-            cityList.children[i].remove();
-        }
-        showCities(res1);
-    }
-
-    showCities(cities);
-
-
-    //результат функции - список городов, в котором есть введенные пользователем буквы
-    function searchCities(citiesArr, expr) {
-        let result = [];
-            // citiesSort = citiesArr.sort();
-
-        for (let i = 0; i < citiesArr.length; i++) {
-            if (expr.test(citiesArr[i]) == true){
-                result.push(citiesArr[i]);
-            } 
-        }
-        return result;
-    }
-
-    
-    //отрисовка списка городов, которые передаются в функцию
-    function showCities(citiesArr) {
-
-        let citiesSort = citiesArr.sort(),
-            letter = citiesSort[0][0],
-            cityList = document.querySelector('.search-city__list'),
-            cityWrapper = document.createElement('div'),
-            divLetter = document.createElement('div');
-        
-        cityList.appendChild(cityWrapper);
-        divLetter.classList.add('search-city__letter');
-        divLetter.innerHTML = letter;
-        cityWrapper.appendChild(divLetter);
-
-        for (let i = 0; i < citiesSort.length; i++) {
-
-            if ((citiesSort[i][0] == letter)){
-                
-                let divCity = document.createElement('div');
-
-                divCity.addEventListener('click', selectCity);
-
-                divCity.classList.add('search-city__city');
-                divCity.innerHTML = citiesSort[i];
-                cityWrapper.appendChild(divCity);
-            }
-            else if ((citiesSort[i][0] != letter)){
-                letter = citiesSort[i][0];
-                let divLetter = document.createElement('div');
-
-                cityWrapper = document.createElement('div');
-
-                cityList.appendChild(cityWrapper);
-                divLetter.classList.add('search-city__letter');
-                divLetter.innerHTML = letter;
-                cityWrapper.appendChild(divLetter);
-
-                let divCity = document.createElement('div');
-
-                divCity.addEventListener('click', selectCity);
-
-                divCity.classList.add('search-city__city');
-                divCity.innerHTML = citiesSort[i];
-                cityWrapper.appendChild(divCity);
-
-            }
-        }
-    }
-
-    function selectCity() {
-        overlaySearch.style.display = 'none';
-        currentLocation.innerHTML = this.innerHTML;
-        // console.log(this.innerHTML);
-    }
-
-=======
-
-    //отправка формы происходит по нажатию Enter или кнопки Отправить
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        name.value = '';
-        phone.value = '';
-    });
-
-    //скрытие по умолчанию контента таба "Для кого?"
-    let tabWhy = document.getElementById('tab-content_why');
-    tabWhy.style.display = "none";
-
-    //скролл в табах
-    $(function() {
-        $('.scroll-pane').jScrollPane();
-    });
->>>>>>> 58da429605829396f10481dfdf956b27fabd96aa
 });

@@ -14,16 +14,16 @@ const isProd = !isDev
 const config_index = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
-    entry: {main: './js/index.js', 
+    entry: {index: './js/index.js', 
             card: './js/card.js'},
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist')
     },
     optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
+        // splitChunks: {
+        //     chunks: 'all'
+        // }
     },
     devServer: {
         port: 8080,
@@ -33,11 +33,13 @@ const config_index = {
     plugins: [
         new HTMLWebpackPlugin({
             template: './index.html',
-            filename: 'index.html'
+            filename: 'index.html',
+            chunks: ['index']
         }),
         new HTMLWebpackPlugin({
             template: './card.html',
-            filename: 'card.html'
+            filename: 'card.html',
+            chunks: ['card']
         }),
         new CleanWebpackPlugin(),
         // new CopyWebpackPlugin({ 
