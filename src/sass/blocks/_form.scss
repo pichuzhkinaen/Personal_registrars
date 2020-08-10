@@ -1,12 +1,17 @@
 .form {
     margin-top: 40px;
     &-content {
-        display: flex;
-        justify-content: space-between;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        color: #FFFFFF;
+        &__promo {
+            display: flex;
+            justify-content: space-between;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            color: #FFFFFF;
+        }
+        &__block {
+            width: 305px;
+        }
         &__prompt {
             font-size: 12px;
             line-height: 16px;
@@ -26,7 +31,7 @@
             background-color: #FFFFFF;
             box-shadow: 10px 20px 45px rgba(0, 0, 0, 0.05);
             padding-left: 50px;
-            margin: 5px 25px 31px 0;
+            margin: 5px 0 31px 0;
         }
         &__img {
             position: absolute;
@@ -44,13 +49,15 @@
     }
 }
 
-.rewiew-form {
+.review-form {
     font-family: Montserrat;
+    margin-top: 40px;
     &_content {
-        justify-content: center;
+        display: flex;
+        justify-content: space-around;
     }
-    &_comment {
-        margin-left: 16%;
+    &_input {
+        width: 100%;
     }
     &_prompt {
         color: #4E4E4E;
@@ -58,11 +65,8 @@
     &_img {
         opacity: 0.5;
     }
-    &_input {
-        width: 393px;
-    }
     &_textarea {
-        width: 816px;
+        width: 100%;
         height: 90px;
         line-height: 26px;
         padding: 10px 0 0 20px;

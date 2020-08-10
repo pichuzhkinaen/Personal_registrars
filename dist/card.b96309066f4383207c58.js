@@ -14104,7 +14104,6 @@ document.addEventListener('DOMContentLoaded', function() {
     'use strict';
     
     let menuLink = document.querySelectorAll('.menu__item_drop-down');
-        // bodyS = document.getElementsByTagName('body');
 
     // console.log(menuLink);
     for (let i = 0; i < menuLink.length; i++) {
@@ -14130,7 +14129,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let targetSubMenu = this.querySelector('.submenu'),
             targetArrow = this.querySelector('.arrow');
 
-        console.log(event.target);
+        // console.log(event.target);
 
         if (!(targetSubMenu.classList.contains('submenu_active'))) {
             targetSubMenu.classList.add('submenu_active');
@@ -14269,8 +14268,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'use strict';
     //модальное окно для поиска города
     let overlaySearch = document.querySelectorAll('.overlay-search'),
-        inputSearch = document.querySelectorAll('.search-city__input'),
         currentLocation = document.querySelectorAll('.contacts-block__location_link'),
+        locationArrow = document.querySelectorAll('.contacts-block__arrow'),
         searchClose = document.querySelectorAll('.modal-search__close'),
         searchBtn = document.querySelectorAll('.search-city__btn');
 
@@ -14427,6 +14426,8 @@ document.addEventListener('DOMContentLoaded', function() {
             for (let j = 0; j < overlaySearch.length; j++) {
                 overlaySearch[j].style.display = 'none';
                 currentLocation[i].innerHTML = this.innerHTML;
+                currentLocation[i].classList.add('contacts-block__location_link');
+
                 // console.log(this.innerHTML);
             }
         }
@@ -14510,6 +14511,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 settings: {
                     dots: false,
                     centerMode: true,
+                    variableWidth: true,
                 }
             }
         ]

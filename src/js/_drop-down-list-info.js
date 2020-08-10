@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     'use strict';
     
     let menuLink = document.querySelectorAll('.menu__item_drop-down');
-        // bodyS = document.getElementsByTagName('body');
 
     // console.log(menuLink);
     for (let i = 0; i < menuLink.length; i++) {
@@ -28,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let targetSubMenu = this.querySelector('.submenu'),
             targetArrow = this.querySelector('.arrow');
 
-        console.log(event.target);
+        // console.log(event.target);
 
         if (!(targetSubMenu.classList.contains('submenu_active'))) {
             targetSubMenu.classList.add('submenu_active');

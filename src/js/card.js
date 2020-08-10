@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 settings: {
                     dots: false,
                     centerMode: true,
+                    variableWidth: true,
                 }
             }
         ]

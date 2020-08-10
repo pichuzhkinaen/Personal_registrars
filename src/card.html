@@ -11,62 +11,63 @@
 <body>
     <header class="header-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="header">
-                        <a href="index.html"><img class="header-logo" src="./icon/logo1.svg" alt="logo"></a>
+            <div class="header">
+                <div class="header-wrapper">
+                    <a href="/dist/index.html"><img class="header-logo" src="./icon/logo1.svg" alt="logo"></a>
 
-                        <div class="contacts">
-                            <div class="contacts-block">
-                                <p class="contacts-block__content">
+                    <div class="contacts">
+                        <div class="contacts-block">
+                            <div class="contacts-block__content">
+                                <div>
                                     <img class="contacts-block__geo" src="./icon/geo.svg" alt="geo" class="contacts-block__img">
-                                    Выберите город: 
-                                    <a href="#" class="contacts-block__location">
-                                        <span class="contacts-block__location_link">Петропавловск-Камчатский</span>
-                                    </a>
+                                    <span>Выберите город:&#160;</span>
+                                </div>
+                                <div>
+                                    <span class="contacts-block__location_link">Петропавловск-Камчатский</span>
                                     <img src="./icon/arrow.svg" alt="arrow" class="contacts-block__arrow">
-                                </p>
-                                <span class="contacts-block__text">ул. Ленинградская, 100</span>
+                                </div>
                             </div>
-
-                            <div class="contacts-block">
-                                <p class="contacts-block__content">
-                                    <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
-                                    <span>Для всех регионов:</span>
-                                </p>
-                                <span class="contacts-block__text">8 (800) 551-23-30</span>
-                            </div>
-
-                            <div class="contacts-block">
-                                <p class="contacts-block__content">
-                                    <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
-                                    <span>Для Петропавловск-Камчатского:</span>
-                                </p>
-                                <span class="contacts-block__text">8 (958) 581-53-52</span>
-                            </div>
-                            
+                            <span class="contacts-block__text">ул. Ленинградская, 100</span>
                         </div>
 
-                        <div class="buy">
-                            <div class="buy-basket">
-                                <a href="#">
-                                    <img class="buy-basket__img" src="./icon/icon.svg" alt="basket">
-                                </a>
-                                <a href="#">
-                                    <span class="buy-basket__circle">0</span>
-                                </a>
+                        <div class="contacts-block">
+                            <div class="contacts-block__content">
+                                <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
+                                <span>Для всех регионов:</span>
                             </div>
-                            <a href="#">
-                                <span class="buy__sum">0</span>
-                            </a>
-                            <span>&#160;₽</span>
+                            <span class="contacts-block__text">8 (800) 551-23-30</span>
                         </div>
 
-                        <button class="button button_call">
-                            <img class="button__img" src="./icon/phone_white.svg" alt="phone">
-                            Перезвоните мне
-                        </button>
+                        <div class="contacts-block">
+                            <p class="contacts-block__content">
+                                <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
+                                <span>Для Петропавловск-Камчатского:</span>
+                            </p>
+                            <span class="contacts-block__text">8 (958) 581-53-52</span>
+                        </div>
                     </div>
+                </div>
+                
+                <div class="buy-wrapper">
+                    <div class="buy">
+                        <div class="buy-basket">
+                            <a href="#">
+                                <img class="buy-basket__img" src="./icon/icon.svg" alt="basket">
+                            </a>
+                            <a href="#">
+                                <span class="buy-basket__circle">0</span>
+                            </a>
+                        </div>
+                        <a href="#">
+                            <span class="buy__sum">0</span>
+                        </a>
+                        <span>&#160;₽</span>
+                    </div>
+
+                    <button class="button button_call">
+                        <img class="button__img" src="./icon/phone_white.svg" alt="phone">
+                        Перезвоните мне
+                    </button>
                 </div>
             </div>
 
@@ -100,7 +101,7 @@
     <section class="card-product">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="breadcrumbs">
                         <img class="breadcrumbs__img" src="./icon/home.svg" alt="home">
                         <span class="breadcrumbs__slash">/</span>
@@ -129,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="product-buy">
                         <h2 class="product-buy__title">Название товара “Самая лучшая камера”</h2>
                         <div class="product-buy__wrapper">
@@ -198,24 +199,20 @@
 
     <section class="card-menu">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="menu card-menu__list">
-                        <li class="menu__item card-menu__item">
-                            <button id="btn-descr" class="button card-menu__btn card-menu__btn_active">Описание</button>
-                        </li>
-                        <li class="menu__item card-menu__item">
-                            <button class="button card-menu__btn">Характеристики</button>
-                        </li>
-                        <li class="menu__item card-menu__item">
-                            <button id="btn-reviews" class="button card-menu__btn">Отзывы</button>
-                        </li>
-                        <li class="menu__item card-menu__item">
-                            <button class="button card-menu__btn">Вопрос-ответ</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="menu card-menu__list">
+                <li class="menu__item card-menu__item">
+                    <button id="btn-descr" class="button card-menu__btn card-menu__btn_active">Описание</button>
+                </li>
+                <li class="menu__item card-menu__item">
+                    <button class="button card-menu__btn">Характеристики</button>
+                </li>
+                <li class="menu__item card-menu__item">
+                    <button id="btn-reviews" class="button card-menu__btn">Отзывы</button>
+                </li>
+                <li class="menu__item card-menu__item">
+                    <button class="button card-menu__btn">Вопрос-ответ</button>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -230,54 +227,60 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews">
-                <div class="reviews-content reviews__1">
-                    <img class="reviews-content__avatar"src="./icon/avatar1.png" alt="avatar">
-                    <div class="comment">
-                        <time class="comment__time" datetime="2019-12-01 04:50">01.12.2019, 04:50</time>
-                        <div class="comment__name">Инна Иванова</div>
-                        <div class="comment__text">Можно ли установить глушилку сотовой связи в автомобиль?</div>
+            <div class="col-md-8 offset-md-2">
+                <div class="reviews">
+                    <div class="reviews-content reviews__1">
+                        <img class="reviews-content__avatar"src="./icon/avatar1.png" alt="avatar">
+                        <div class="comment">
+                            <time class="comment__time" datetime="2019-12-01 04:50">01.12.2019, 04:50</time>
+                            <div class="comment__name">Инна Иванова</div>
+                            <div class="comment__text">Можно ли установить глушилку сотовой связи в автомобиль?</div>
+                        </div>
                     </div>
+                    <div class="reviews-content reviews__2">
+                        <img class="reviews-content__avatar"src="./icon/avatar2.png" alt="avatar">
+                        <div class="comment">
+                            <time class="comment__time" datetime="2019-12-01 04:50">01.12.2019, 04:50</time>
+                            <div class="comment__name">Василий Пупкин</div>
+                            <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit tincidunt odio et sapien, sem. Volutpat elementum pharetra aenean porta sit. Sagittis, est, ultrices placerat tristique velit semper aliquet dictum. </div>
+                        </div>
+                    </div>    
                 </div>
-                <div class="reviews-content reviews__2">
-                    <img class="reviews-content__avatar"src="./icon/avatar2.png" alt="avatar">
-                    <div class="comment">
-                        <time class="comment__time" datetime="2019-12-01 04:50">01.12.2019, 04:50</time>
-                        <div class="comment__name">Василий Пупкин</div>
-                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit tincidunt odio et sapien, sem. Volutpat elementum pharetra aenean porta sit. Sagittis, est, ultrices placerat tristique velit semper aliquet dictum. </div>
-                    </div>
-                </div>    
-            </div>            
+            </div>    
         </div>
     </section>
 
 
     <section class="send-comment">
         <div class="container">
-            <h3 class="send-comment__title">Оставить отзыв о товаре</h3>
-            <form class="form rewiew-form">
-                <div class="form-content rewiew-form_content">
-                    <div>
-                        <p class="form-content__prompt rewiew-form_prompt">* Ваше имя</p>
-                        <img class="form-content__img rewiew-form_img" src="./icon/user.svg" alt="img">
-                        <input type="text" class="form-content__input rewiew-form_input" placeholder="Введите имя" required autocomplete="on" minlength="2" maxlength="50">
-                    </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h3 class="send-comment__title">Оставить отзыв о товаре</h3>
+                    <form class="form review-form">
+                        <div class="form-content review-form_content">
+                            <div class="col-md-6">
+                                <p class="form-content__prompt review-form_prompt">* Ваше имя</p>
+                                <img class="form-content__img review-form_img" src="./icon/user.svg" alt="img">
+                                <input type="text" class="form-content__input review-form_input" placeholder="Введите имя" required autocomplete="on" minlength="2" maxlength="50">
+                            </div>
 
-                    <div>
-                        <p class="form-content__prompt rewiew-form_prompt">* Ваш телефон</p>
-                        <img class="form-content__img" src="./icon/phone-receiver.svg" alt="img">
-                        <input id="phone" type="tel" class="form-content__input rewiew-form_input" placeholder="+7 (___) ___-__-__" required autocomplete="on">
-                    </div>
+                            <div class="col-md-6">
+                                <p class="form-content__prompt review-form_prompt">* Ваш телефон</p>
+                                <img class="form-content__img" src="./icon/phone-receiver.svg" alt="img">
+                                <input id="phone" type="tel" class="form-content__input review-form_input" placeholder="+7 (___) ___-__-__" required autocomplete="on">
+                            </div>
+                        </div>
+                        
+                        <div class="review-form_comment">
+                            <div class="col-md-12">
+                                <p class="form-content__prompt review-form_prompt">* Ваш отзыв</p>
+                                <textarea id="name" type="text" class="form-content__input review-form_textarea" placeholder="Оставьте ваш отзыв" required autocomplete="on" minlength="2" maxlength="50"></textarea>
+                            </div>
+                        </div>
+                        <button class="button button-review">Отправить</button>
+                    </form>
                 </div>
-                
-                <div class="rewiew-form_comment">
-                    <div>
-                        <p class="form-content__prompt rewiew-form_prompt">* Ваш отзыв</p>
-                        <textarea id="name" type="text" class="form-content__input rewiew-form_textarea" placeholder="Оставьте ваш отзыв" required autocomplete="on" minlength="2" maxlength="50"></textarea>
-                    </div>
-                </div>
-                <button class="button button-review">Отправить</button>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -312,95 +315,100 @@
     </section>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">                    
-                    <nav class="nav">
-                        <ul class="menu">
-                            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Доставка и оплата</a></li>
-                            <li class="menu__item menu__item_drop-down">
-                                <span class="menu__link">Полезная информация</span>
-                                <div class="arrow"></div>
-            
-                                <div class="submenu">
-                                    <ul class="menu-select">                                
-                                        <li class="menu-select__item"><a class="menu-select__link" href="#">Акции</a></li>
-                                        <li class="menu-select__item"><a class="menu-select__link" href="#">Новости</a></li>
-                                        <li class="menu-select__item"><a class="menu-select__link" href="#">Статьи</a></li>
-                                    </ul>
-                                </div>
-            
-                            </li>
-                            <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-                        </ul>
-                    </nav>
+        <div class="container">                   
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Доставка и оплата</a></li>
+                    <li class="menu__item menu__item_drop-down">
+                        <span class="menu__link">Полезная информация</span>
+                        <div class="arrow"></div>
+    
+                        <div class="submenu">
+                            <ul class="menu-select">                                
+                                <li class="menu-select__item"><a class="menu-select__link" href="#">Акции</a></li>
+                                <li class="menu-select__item"><a class="menu-select__link" href="#">Новости</a></li>
+                                <li class="menu-select__item"><a class="menu-select__link" href="#">Статьи</a></li>
+                            </ul>
+                        </div>
+    
+                    </li>
+                    <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
 
-                    <div class="header">
-                        <a href="#"><img class="header-logo" src="./icon/logo1.svg" alt="logo"></a>
+            <div class="header">
+                <div class="header-wrapper">
+                    <a href="#"><img class="header-logo" src="./icon/logo1.svg" alt="logo"></a>
 
-                        <div class="contacts">
-                            <div class="contacts-block">
-                                <p class="contacts-block__content">
+                    <div class="contacts">
+                        <div class="contacts-block">
+                            <div class="contacts-block__content">
+                                <div>
                                     <img class="contacts-block__geo" src="./icon/geo.svg" alt="geo" class="contacts-block__img">
-                                    Выберите город: 
-                                    <a href="#" class="contacts-block__location">
-                                        <span class="contacts-block__location_link">Петропавловск-Камчатский</span>
-                                    </a>
+                                    <span>Выберите город:&#160;</span>
+                                </div>
+                                <div>
+                                    <span class="contacts-block__location_link">&#160;Петропавловск-Камчатский</span>
                                     <img src="./icon/arrow.svg" alt="arrow" class="contacts-block__arrow">
-                                </p>
-                                <span class="contacts-block__text">ул. Ленинградская, 100</span>
+                                </div>
                             </div>
-
-                            <div class="contacts-block">
-                                <p class="contacts-block__content">
-                                    <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
-                                    <span>Для всех регионов:</span>
-                                </p>
-                                <span class="contacts-block__text">8 (800) 551-23-30</span>
-                            </div>
-
-                            <div class="contacts-block">
-                                <p class="contacts-block__content">
-                                    <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
-                                    <span>Для Петропавловск-Камчатского:</span>
-                                </p>
-                                <span class="contacts-block__text">8 (958) 581-53-52</span>
-                            </div>
-                            
+                            <span class="contacts-block__text">ул. Ленинградская, 100</span>
                         </div>
 
-                        <img class="social-icon" src="./icon/vk-social-logotype.svg" alt="vkontakte">
-                        <img class="social-icon" src="./icon/facebook-logo-button.svg" alt="facebook">
-                        <img class="social-icon" src="./icon/instagram-logo.svg" alt="instagram">
+                        <div class="contacts-block">
+                            <p class="contacts-block__content">
+                                <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
+                                <span>Для всех регионов:</span>
+                            </p>
+                            <span class="contacts-block__text">8 (800) 551-23-30</span>
+                        </div>
 
-                        <button class="button button_call">
-                            <img class="button__img" src="./icon/phone_white.svg" alt="phone">
-                            Перезвоните мне
-                        </button>
+                        <div class="contacts-block">
+                            <p class="contacts-block__content">
+                                <img class="contacts-block__img" src="./icon/phone.svg" alt="phone">
+                                <span>Для Петропавловск-Камчатского:</span>
+                            </p>
+                            <span class="contacts-block__text">8 (958) 581-53-52</span>
+                        </div>
                     </div>
+                </div>
+                
+                <div class="buy-wrapper">
+                    <img class="social-icon" src="./icon/vk-social-logotype.svg" alt="vkontakte">
+                    <img class="social-icon" src="./icon/facebook-logo-button.svg" alt="facebook">
+                    <img class="social-icon" src="./icon/instagram-logo.svg" alt="instagram">
+
+                    <button class="button button_call">
+                        <img class="button__img" src="./icon/phone_white.svg" alt="phone">
+                        Перезвоните мне
+                    </button>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-                <div class="footer-content">
-                    <p class="footer-content__text">ООО Третья планета ИНН 7017448330 ОГРН 1187031063053</p>
-                    <ul class="menu">
-                        <li class="menu__item"><a href="#" class="menu__link">Возврат и обмен</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Гарантии</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Политика конфиденциальности</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Карта сайта</a></li>
-                    </ul>
+            <div class="footer-wrapper">
+                <div class="container">
+                    <div class="footer-content">
+                        <span class="footer-content__text">ООО Третья планета ИНН 7017448330 ОГРН 1187031063053</span>
+                        <ul class="menu">
+                            <li class="menu__item"><a href="#" class="menu__link">Возврат и обмен</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Гарантии</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Политика конфиденциальности</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Карта сайта</a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="subfooter">
-                    <span class="subfooter__text">Все права защищены</span>
-                    <a href="#" class="subfooter__link">regcam.ru</a>
-                    <span class="subfooter__text">2020 ©</span>
-                </div>
+            </div>
+            
+            <div class="subfooter">
+                <span class="subfooter__text">Все права защищены</span>
+                <a href="#" class="subfooter__link">regcam.ru</a>
+                <span class="subfooter__text">2020 ©</span>
+            </div>
         </div>
     </footer>
 

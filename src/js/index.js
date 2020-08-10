@@ -15,6 +15,7 @@ import '../css/jquery.jscrollpane.css';
 import '../../node_modules/slick-carousel/slick/slick.css';
 import '../../node_modules/slick-carousel/slick/slick-theme.css';
 import '../css/style.css';
+// import '../sass/base/style.scss';
 
 
 document.addEventListener('DOMContentLoaded', function() {

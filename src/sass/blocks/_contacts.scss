@@ -8,6 +8,7 @@
     &-block {
         padding-right: 25px;
         &__content {
+            display: flex;
             margin: 0;
         }
         &__location {
@@ -17,7 +18,11 @@
             &_link {
                 color: #4E4E4E;
                 font-weight: bold;
+                cursor: pointer;
             }
+        }
+        &__arrow {
+            cursor: pointer;
         }
         &__text {
             font-size: 18px;
@@ -30,6 +35,7 @@
         &__img {
             height: 14px;
             opacity: 0.3;
+            margin-right: 5px;
         }
     }
     

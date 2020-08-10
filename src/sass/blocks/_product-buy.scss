@@ -1,5 +1,8 @@
 .product-buy {
     font-family: Montserrat;
+    &__wrapper {
+        margin-top: 65px;
+    }
     &__title {
         font-weight: 600;
         font-size: 32px;
@@ -15,7 +18,7 @@
         border-radius: 10px;
         text-align: center;
         background: #162345;
-        margin-top: 62px;
+        margin-top: 3px;
     }
     &__minus {
         width: 36px;
@@ -53,7 +56,8 @@
         line-height: 39px;
         text-decoration: line-through;
         color: #B9B9B9;
-        margin: 70px 0 0 24px;
+        margin-left: 24px;
+        margin-top: 12px;
     }
     &__new-price {
         font-weight: 300;
@@ -63,7 +67,7 @@
         align-items: center;
         text-align: right;
         color: #131313;
-        margin: 62px 0 0 14px;
+        margin-left: 14px;
     }
     &__btn {
         display: flex;
@@ -102,7 +106,7 @@
         margin-top: 40px;
     }
     &__block {
-      margin-right: 30px;  
+        margin-right: 30px;  
     }
     &__circle {
         width: 61px;

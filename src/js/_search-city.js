@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'use strict';
     //модальное окно для поиска города
     let overlaySearch = document.querySelectorAll('.overlay-search'),
-        inputSearch = document.querySelectorAll('.search-city__input'),
         currentLocation = document.querySelectorAll('.contacts-block__location_link'),
+        locationArrow = document.querySelectorAll('.contacts-block__arrow'),
         searchClose = document.querySelectorAll('.modal-search__close'),
         searchBtn = document.querySelectorAll('.search-city__btn');
 
@@ -160,6 +160,8 @@ document.addEventListener('DOMContentLoaded', function() {
             for (let j = 0; j < overlaySearch.length; j++) {
                 overlaySearch[j].style.display = 'none';
                 currentLocation[i].innerHTML = this.innerHTML;
+                currentLocation[i].classList.add('contacts-block__location_link');
+
                 // console.log(this.innerHTML);
             }
         }

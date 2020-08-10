@@ -1,12 +1,21 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 30px;
     font-family: 'Montserrat', sans-serif;
     &-logo {
         width: 52px;
         height: 24px;
         margin-right: 66px;
+    }
+    &-wrapper {
+        display: flex;
+    }
+    .buy-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
     }
 }
 .nav {
@@ -23,10 +32,9 @@
     justify-content: space-between;
     min-height: 617px;
     .product-photo {
-        width: 120%;
-        height: 100%;
+        width: 550px;
+        height: 400px;
         background: url(../img/360_1.png) center (center / cover) no-repeat;
-        margin-top: 50px;
     }
 }
 
@@ -51,6 +59,8 @@
 }
 
 .card-product {
+    display: flex;
+    justify-content: space-between;
     .breadcrumbs {
         display: flex;
         font-family: Montserrat;

@@ -1,13 +1,13 @@
-const path = require('path')
-const HTMLWebpackPlugin = require('html-webpack-plugin')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')
-const TerserWebpackPlugin = require('terser-webpack-plugin')
+const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserWebpackPlugin = require('terser-webpack-plugin');
 
-const isDev = process.env.NODE_ENV === 'development'
-const isProd = !isDev
+const isDev = process.env.NODE_ENV === 'development';
+const isProd = !isDev;
 
 
 
@@ -129,18 +129,29 @@ const config_card = {
     ],
     module: {
         rules: [
+            // {
+            //     test: /\.css$/,
+            //     use: [
+            //         {
+            //             loader: MiniCssExtractPlugin.loader
+            //             // options: {
+            //             //     //hmr: isDev,
+            //             //     //reloadAll: true
+            //             // },
+            //         },
+            //         'css-loader'
+            //     ]
+            // },
             {
-                test: /\.css$/,
+                test: /\.s[ac]ss$/i,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                        // options: {
-                        //     //hmr: isDev,
-                        //     //reloadAll: true
-                        // },
-                    },
-                    'css-loader'
-                ]
+                  // Creates `style` nodes from JS strings
+                  'style-loader',
+                  // Translates CSS into CommonJS
+                  'css-loader',
+                  // Compiles Sass to CSS
+                  'sass-loader',
+                ],
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,

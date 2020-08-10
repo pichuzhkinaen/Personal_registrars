@@ -1,5 +1,6 @@
 .slick-slide {
     outline: none;
+    padding: 0 20px;
 }
 .slick-slider {
     display: flex;
@@ -13,6 +14,7 @@
     padding: 18px;
 }
 .slick-arrow {
+    position: absolute;
     width: 56px;
     height: 56px;
     background: #FFFFFF;
@@ -28,13 +30,13 @@
     margin-top: 30px;
 }
 .slick-prev {
-    left: 25px;
+    margin-left: 50px;
     &:before {
         content: url(../icon/arrow_left.svg);
     }
 }
 .slick-next {
-    left: 494px;
+    margin-right: 110px;
     &:before {
         content: url(../icon/arrow_right.svg);
     }
@@ -42,8 +44,9 @@
 .carousel {
     &__inner {
         &-img {
-            width: 90%;
-            height: 90%;   
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;  
         }
     }
     &__number {
